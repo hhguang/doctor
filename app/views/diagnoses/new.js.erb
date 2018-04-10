@@ -1,0 +1,6 @@
+var html = "<%= j(render('form', diagnosis: @diagnosis, remote: true)) %>";
+// bootbox 弹窗插件 http://bootboxjs.com/
+bootbox.dialog({
+  title: "新增记录",
+  message: html
+});

@@ -1,0 +1,40 @@
+<% local = !remote rescue true %>
+<%= form_with(model: [@patient, diagnosis], local: local) do |form| %>
+  <% if diagnosis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(diagnosis.errors.count, "error") %> prohibited this diagnosis from being saved:</h2>
+
+      <ul>
+      <% diagnosis.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= form.label :heart_rate %>
+    <%= form.number_field :heart_rate, id: :diagnosis_heart_rate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bp %>
+    <%= form.text_field :bp, id: :diagnosis_bp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bs %>
+    <%= form.text_field :bs, id: :diagnosis_bs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prescription %>
+    <%= form.text_area :prescription, id: :diagnosis_prescription %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
