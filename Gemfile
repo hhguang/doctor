@@ -59,3 +59,6 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'mina'
 gem 'mina-puma', require: false
 gem 'mysql2'
+group :production do
+  gem 'uglifier', '>= 1.3.0'
+end
