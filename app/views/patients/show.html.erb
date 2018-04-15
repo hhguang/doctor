@@ -3,22 +3,22 @@
 <%= link_to 'Edit', edit_patient_path(@patient) %> |
 <%= link_to 'Back', patients_path %>
 <p>
-  <strong>Name:</strong>
+  <strong>姓名:</strong>
   <%= @patient.name %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong>电话:</strong>
   <%= @patient.phone %>
 </p>
 
 <p>
-  <strong>Sex:</strong>
+  <strong>性别:</strong>
   <%= @patient.sex %>
 </p>
 
 <p>
-  <strong>Age:</strong>
+  <strong>年龄:</strong>
   <%= @patient.age %>
 </p>
 
@@ -28,7 +28,7 @@
 </p>
 
 <p>
-  <strong>Case history:</strong>
+  <strong>病史:</strong>
   <%= @patient.case_history %>
 </p>
 <hr/>
@@ -36,11 +36,11 @@
     <table class="table" style="margin-top: 10px;" id="diagnoses">
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Heart rate</th>
-          <th>Bp</th>
-          <th>Bs</th>
-          <th>Prescription</th>
+          <th>记录时间</th>
+          <th>心率</th>
+          <th>血压</th>
+          <th>血糖</th>
+          <th>处方</th>
           <th colspan="3"></th>
         </tr>
       </thead>

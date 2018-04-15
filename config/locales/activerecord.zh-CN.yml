@@ -1,0 +1,22 @@
+## YAML Template.
+---
+zh-CN:
+  activerecord:
+    models:
+      diagnosis: '诊断'
+      patient: "病人"
+    attributes:
+      diagnosis:
+        heart_rate: '心率'
+        bp: '血压'
+        bs: '血糖'
+        prescription: '处方'
+        record_date: '记录时间'
+      patient:
+        name: '姓名'
+        phone: '电话'
+        sex: '性别'
+        age: '年龄'
+        birthyear: '出生年'
+        case_history: '病史'
+        
