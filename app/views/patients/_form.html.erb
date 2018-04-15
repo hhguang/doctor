@@ -11,37 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :patient_name %>
+    <%= form.text_field :name, id: :patient_name, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :phone %>
-    <%= form.text_field :phone, id: :patient_phone %>
+    <%= form.text_field :phone, id: :patient_phone, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :sex %>
-    <%= form.text_field :sex, id: :patient_sex %>
+    <%= form.text_field :sex, id: :patient_sex, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :age %>
-    <%= form.text_field :age, id: :patient_age %>
+    <%= form.text_field :age, id: :patient_age, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :birthyear %>
-    <%= form.text_field :birthyear, id: :patient_birthyear %>
+    <%= form.text_field :birthyear, id: :patient_birthyear, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :case_history %>
-    <%= form.text_area :case_history, id: :patient_case_history %>
+    <%= form.text_area :case_history, id: :patient_case_history, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, {class: 'btn btn-primary' } %>
   </div>
 <% end %>

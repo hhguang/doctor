@@ -14,27 +14,27 @@
 
 
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :heart_rate %>
-    <%= form.number_field :heart_rate, id: :diagnosis_heart_rate %>
+    <%= form.number_field :heart_rate, id: :diagnosis_heart_rate, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :bp %>
-    <%= form.text_field :bp, id: :diagnosis_bp %>
+    <%= form.text_field :bp, id: :diagnosis_bp, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :bs %>
-    <%= form.text_field :bs, id: :diagnosis_bs %>
+    <%= form.text_field :bs, id: :diagnosis_bs, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :prescription %>
-    <%= form.text_area :prescription, id: :diagnosis_prescription %>
+    <%= form.text_area :prescription, id: :diagnosis_prescription, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, {class: 'btn btn-primary'} %>
   </div>
 <% end %>
