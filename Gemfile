@@ -58,3 +58,4 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'mina'
 gem 'mina-puma', require: false
+gem 'mysql2'
