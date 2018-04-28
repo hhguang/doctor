@@ -46,9 +46,9 @@
       </thead>
 
       <tbody>
-        <% @patient.diagnoses.order(id: :desc).each do |diagnosis| %>
+        <% @patient.diagnoses.order(record_date: :desc).each do |diagnosis| %>
           <tr>
-            <td><%= diagnosis.updated_at.to_s %></td>
+            <td><%= diagnosis.record_date.to_date.to_s rescue nil %></td>
             <td><%= diagnosis.heart_rate %></td>
             <td><%= diagnosis.bp %></td>
             <td><%= diagnosis.bs %></td>

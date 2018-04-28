@@ -85,6 +85,6 @@ class DiagnosesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def diagnosis_params
-      params.require(:diagnosis).permit(:patient_id, :heart_rate, :bp, :bs, :prescription)
+      params.require(:diagnosis).permit(:patient_id, :heart_rate, :bp, :bs, :prescription, :record_date)
     end
 end
