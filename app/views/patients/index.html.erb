@@ -9,7 +9,6 @@
       <th>电话</th>
       <th>性别</th>
       <th>年龄</th>
-      <th>Birthyear</th>
       <th>病史</th>
       <th colspan="3"></th>
     </tr>
@@ -21,8 +20,7 @@
         <td><%= patient.name %></td>
         <td><%= patient.phone %></td>
         <td><%= patient.sex %></td>
-        <td><%= patient.age %></td>
-        <td><%= patient.birthyear %></td>
+        <td><%= patient.age %></td>        
         <td><%= patient.case_history %></td>
         <td><%= link_to 'Show', patient %></td>
         <td><%= link_to 'Edit', edit_patient_path(patient) %></td>

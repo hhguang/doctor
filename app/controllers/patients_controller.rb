@@ -12,7 +12,7 @@ class PatientsController < ApplicationController
   # GET /patients/1
   # GET /patients/1.json
   def show
-    
+
   end
 
   # GET /patients/new
@@ -72,6 +72,6 @@ class PatientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def patient_params
-      params.require(:patient).permit(:name, :phone, :sex, :age, :birthyear, :case_history)
+      params.require(:patient).permit(:name, :phone, :sex, :age, :birthyear, :case_history, :birth_date)
     end
 end

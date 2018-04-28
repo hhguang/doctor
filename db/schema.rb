@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180415084309) do
+ActiveRecord::Schema.define(version: 20180428082142) do
 
   create_table "diagnoses", force: :cascade do |t|
     t.integer "patient_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20180415084309) do
     t.text "case_history"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "birth_date"
   end
 
 end

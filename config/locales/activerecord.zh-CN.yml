@@ -18,5 +18,5 @@ zh-CN:
         sex: '性别'
         age: '年龄'
         birthyear: '出生年'
+        birth_date: '出生年月日'
         case_history: '病史'
-        
