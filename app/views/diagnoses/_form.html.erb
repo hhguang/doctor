@@ -36,7 +36,9 @@
 
   <div class="form-group">
     <%= form.label :record_date %>
-    <%= form.date_select :record_date, id: :diagnosis_record_date, class: 'form-control' %>
+    <div class="form-row">
+      <%= form.date_select :record_date, {}, {id: :diagnosis_record_date, class: 'form-control col'} %>
+    </div>
   </div>
 
   <div class="actions">
